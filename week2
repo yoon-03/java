@@ -1,0 +1,69 @@
+데이터타입
+
+  byte    1바이트 8비트
+  char    2바이트 16비트  (유니코드 사용용도 음수 x)
+  short   2바이트 16비트
+  int     4바이트 34비트
+  long    8바이트 64비트
+
+  ㅡㅡ정수형 ㅡㅡ
+  flat    4바이트 32비트
+  double  8바이트 64비트
+
+ㅡㅡ실수형ㅡㅡ
+
+  boolean    1바이트 (true, false 2개의 값만을 가짐)
+
+문자열
+%s : 문자열
+%c : 문자1개
+%d : 부호 없는 정수(양수)
+%u : 부호 있는 정수(음수, 양수)
+%f : 실수
+%.xf : 소수 x자리까지 표시
+  
+
+단축키
+
+  shift : 여러줄 선택
+  ctrl + shift + / : 여러줄 한번에 주석
+  ctrl + shift + 방향키위아래(up down) : 복사
+  ctrl + L : 입력한 줄로 이동
+  ctrl + D : 한 줄 삭제
+  ctrl + F : 검색
+  alt + up, down : 줄이동 
+  
+
+
+강제 타입 변환
+
+  //강제 타입 변환
+		//작은 타입 = (작은 타입)큰 타입 변수를 적용
+		int iData = 65;
+		char cData = (char)iData;
+		System.out.println(cData);
+		
+		long lData = 500;
+		iData = (int)lData;
+		System.out.println(iData);
+		
+		double dData = 3.14;
+		iData = (int)dData;
+		System.out.println(iData);
+		
+		//casting을 적용할 때 데이터 손실 여부 확인
+		int iValue = 128;
+		byte bValue = (byte)iValue;
+		System.out.println(bValue);
+		
+		if (iValue >= Byte.MIN_VALUE && iValue <= Byte.MAX_VALUE)
+			bValue = (byte)iValue;	//casting 가능
+		else 
+			System.out.println("casting 범위를 벗어납니다.");
+		
+		
+	}
+}
+
+
+
