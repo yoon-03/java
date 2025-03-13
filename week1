@@ -1,0 +1,28 @@
+package week1;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.println("학과 : 컴퓨터정보과");
+		System.out.println("학번 : 202244041");
+		System.out.println("이름 : 박계윤");
+
+	}
+
+}
+
+
+
+
+java의 특징 
+
+  이식성 높은 언어이다.
+  객체지향프로그래밍언어이다.  
+  메모리 자동으로 관리 (free, new ,malloc같은 메모리 할당 불필요)
+
+
+
+JRE = 자바 프로그램 읽기만 가능 (수정불가능 -r) + 표준 클래스 라이브러리
+
+JDK = 읽기 및 수정 가능 , JDK = JRE + 개발에 필요한 도구
+
+
